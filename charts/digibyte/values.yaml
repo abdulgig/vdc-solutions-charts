@@ -1,0 +1,64 @@
+# Default values for digibyte.
+replicaCount: 1
+
+image:
+  repository: arrajput/digibyte
+  pullPolicy: Always
+  tag: "2.5"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+global:
+ ingress:
+  enabled: true
+# The host should be overrided with the domain name in the chatflow  
+  host: "fullnode.digibyte"
+  certresolver: default
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    ingress.kubernetes.io/ssl-passthrough: "true"
+  paths: 
+    - "/"
+  tls: []
+ 
+# These values should be overrided from the chatflow (rpcuser & rpcuser)
+env:          
+  "rpcuser": "tfnow" 
+  "rpcpasswd": "tfdgb2020"
+
+resources: 
+    limits:
+      cpu: 2000m
+      memory: 2048Mi
+    requests:
+      cpu: 1800m
+      memory: 2000Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+threefoldVdc:
+  backup: ''

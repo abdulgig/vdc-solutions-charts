@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "cryptpad.fullname" . }}
+  labels:
+    backupType: {{ .Values.threefoldVdc.backup | quote }}
+    {{- include "cryptpad.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "cryptpad.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "cryptpad.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "cryptpad.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          env:
+          - name: size
+            value: "{{ mul .Values.volume.size 1024 }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - protocol: TCP
+              containerPort: 80
+          # livenessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: http
+          # readinessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: http
+          volumeMounts:
+            - name: cryptpad
+              mountPath: /cryptpad/blob
+              subPath: blob
+            - name: cryptpad
+              mountPath: /cryptpad/block
+              subPath: block
+            - name: cryptpad
+              mountPath: /cryptpad/customize
+              subPath: customize
+            - name: cryptpad
+              mountPath: /cryptpad/data
+              subPath: data
+            - name: cryptpad
+              mountPath: /cryptpad/datastore
+              subPath: datastore
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: cryptpad
+          persistentVolumeClaim:
+            claimName: "{{ include "cryptpad.fullname" . }}-cryptpad-claim"
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

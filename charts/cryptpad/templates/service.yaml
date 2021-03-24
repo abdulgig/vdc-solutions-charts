@@ -1,0 +1,16 @@
+{{- $svcName := printf "%s-%s" .Values.service.name .Release.Name -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $svcName }}
+  labels:
+    backupType: {{ .Values.threefoldVdc.backup | quote }}
+    {{- include "cryptpad.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+  selector:
+    {{- include "cryptpad.selectorLabels" . | nindent 4 }}
