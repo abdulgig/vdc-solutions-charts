@@ -7,7 +7,7 @@ metadata:
     backupType: {{ .Values.threefoldVdc.backup | quote }}
 spec:
   entryPoints:
-    - ingbor-{{ .Release.Name }}
+    - matic-bor
   routes:
     - match: HostSNI(`*`)
       services:
