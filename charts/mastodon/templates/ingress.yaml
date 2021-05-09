@@ -1,0 +1,35 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: "{{ .Values.web.name }}"
+    heritage: "{{ .Release.Service }}"
+    release: "{{ .Release.Name }}"
+  name: {{ template "web.fullname" . }}
+spec:
+  rules:
+  - host: {{ .Values.web.ingress.host }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Release.Name }}-{{ .Chart.Name }}-{{ .Values.web.name }}
+            port:
+              number: {{ .Values.web.servicePort }}
+      - path: /api/v1/streaming
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ .Release.Name }}-{{ .Chart.Name }}-{{ .Values.streaming.name }}
+            port:
+              number: {{ .Values.streaming.servicePort }}
+  tls:
+  - secretName: {{ template "name" . }}-lego-secret
+    hosts:
+    - {{ .Values.web.ingress.host }}
