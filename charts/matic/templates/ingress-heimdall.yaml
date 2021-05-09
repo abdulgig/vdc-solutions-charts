@@ -7,7 +7,7 @@ metadata:
     backupType: {{ .Values.threefoldVdc.backup | quote }}
 spec:
   entryPoints:
-    - ingheim{{ .Release.Name }}
+    - matic-heimdall
   routes:
     - match: HostSNI(`*`)
       services:
