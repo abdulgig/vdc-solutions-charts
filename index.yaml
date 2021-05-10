@@ -3,53 +3,53 @@ entries:
   3bot:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.844236445+04:00"
+    created: "2021-05-10T13:14:49.185166667+04:00"
     description: A Helm chart for Kubernetes
     digest: db0aadd55ed3ae98a19c564a0489c97492beda70536189f6447b26c8a56d4549
     name: 3bot
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/3bot-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/3bot-0.1.0.tgz
     version: 0.1.0
   cryptpad:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-27T12:26:49.844928835+04:00"
+    created: "2021-05-10T13:14:49.185891505+04:00"
     description: A Helm chart for Cryptpad
     digest: 20fd2cc8e119e6f102402e05af44d56c0787c251aed34abdaf4f50b38531f80f
     name: cryptpad
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/cryptpad-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/cryptpad-0.1.0.tgz
     version: 0.1.0
   dash:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.845580584+04:00"
+    created: "2021-05-10T13:14:49.186522445+04:00"
     description: Dash Helm chart for Kubernetes
     digest: 64ebaa985159288a4d3d8ce6d91dfb67a60df59c6c8be5e85daf37fe6904d478
     name: dash
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/dash-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/dash-0.1.0.tgz
     version: 0.1.0
   digibyte:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.84623115+04:00"
+    created: "2021-05-10T13:14:49.18720052+04:00"
     description: Digibyte Helm chart for Kubernetes
     digest: 50896b641853d7d19d9438527a8fec6a67b32ee1c9a33874fb9c5a9881df5314
     name: digibyte
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/digibyte-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/digibyte-0.1.0.tgz
     version: 0.1.0
   discourse:
   - annotations:
       category: Forum
     apiVersion: v2
     appVersion: 2.6.3
-    created: "2021-04-27T12:26:49.877025883+04:00"
+    created: "2021-05-10T13:14:49.200954262+04:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -84,7 +84,7 @@ entries:
     - https://github.com/spinnaker
     - https://www.discourse.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/discourse-2.3.2.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/discourse-2.3.2.tgz
     version: 2.3.2
   - annotations:
       category: Forum
@@ -127,20 +127,20 @@ entries:
   documentserver:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.87774652+04:00"
+    created: "2021-05-10T13:14:49.201742612+04:00"
     description: A helm chart for the onlyoffice documentserver solution
     digest: 6d7a22dc95e34fbf35bfb8124f82eded4c0e35432a83ae3cf59f6b391a4e6360
     name: documentserver
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/documentserver-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/documentserver-0.1.0.tgz
     version: 0.1.0
   etcd:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 3.4.14
-    created: "2021-04-27T12:26:49.881120977+04:00"
+    created: "2021-05-10T13:14:49.20616344+04:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -165,23 +165,23 @@ entries:
     - https://github.com/bitnami/bitnami-docker-etcd
     - https://coreos.com/etcd/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/etcd-5.4.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/etcd-5.4.0.tgz
     version: 5.4.0
   filebrowser:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.88183731+04:00"
+    created: "2021-05-10T13:14:49.207395387+04:00"
     description: A Helm chart for Kubernetes
     digest: c97a1f87bd497232660f9f3e8bd4c103e9a4d83bf0fa7017c09808ba0796c6f1
     name: filebrowser
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/filebrowser-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/filebrowser-0.1.0.tgz
     version: 0.1.0
   gitea:
   - apiVersion: v2
     appVersion: 1.13.0
-    created: "2021-04-27T12:26:49.89523356+04:00"
+    created: "2021-05-10T13:14:49.218968587+04:00"
     dependencies:
     - condition: gitea.cache.builtIn.enabled
       name: memcached
@@ -225,12 +225,12 @@ entries:
     - https://hub.docker.com/r/gitea/gitea/
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/gitea-2.1.3.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/gitea-2.1.3.tgz
     version: 2.1.3
   grafana:
   - apiVersion: v1
     appVersion: 7.2.1
-    created: "2021-04-27T12:26:49.897764071+04:00"
+    created: "2021-05-10T13:14:49.223425313+04:00"
     description: The leading tool for querying and visualizing time series and metrics.
     digest: e82e2c8282b5e406f1ae32b633881e76c5767a24345b17f11743c643d5f95dae
     home: https://grafana.net
@@ -249,25 +249,25 @@ entries:
     sources:
     - https://github.com/grafana/grafana
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/grafana-5.8.16.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/grafana-5.8.16.tgz
     version: 5.8.16
   harmony:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.8983959+04:00"
+    created: "2021-05-10T13:14:49.224159228+04:00"
     description: Harmony Helm chart for Kubernetes
     digest: 4a05274f748527bb86ac5028daaf480ed9e376dcfdda787b9bb38da677bb9e0e
     name: harmony
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/harmony-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/harmony-0.1.0.tgz
     version: 0.1.0
   kube-prometheus:
   - annotations:
       category: Analytics
     apiVersion: v2
     appVersion: 0.43.2
-    created: "2021-04-27T12:26:49.924206457+04:00"
+    created: "2021-05-10T13:14:49.248695354+04:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -301,14 +301,14 @@ entries:
     - https://github.com/bitnami/bitnami-docker-alertmanager
     - https://github.com/prometheus-operator/kube-prometheus
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/kube-prometheus-3.0.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/kube-prometheus-3.0.0.tgz
     version: 3.0.0
   kubeapps:
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.0.1
-    created: "2021-04-27T12:26:49.934734225+04:00"
+    created: "2021-05-10T13:14:49.261643187+04:00"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -329,12 +329,12 @@ entries:
     sources:
     - https://github.com/kubeapps/kubeapps
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/kubeapps-5.0.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/kubeapps-5.0.0.tgz
     version: 5.0.0
   mastodon:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2021-04-27T12:26:49.936032084+04:00"
+    created: "2021-05-10T13:14:49.263078856+04:00"
     description: A Helm chart for Mastodon
     digest: 5b1631202c02b6f9a388e32ef582972d96a3f4c6559eaf5a0d935296c808fa73
     maintainers:
@@ -345,23 +345,23 @@ entries:
     - https://github.com/timwalls/mastodon-chart
     - https://github.com/tootsuite/mastodon
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mastodon-3.3.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/mastodon-3.3.0.tgz
     version: 3.3.0
   matic:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.936653885+04:00"
+    created: "2021-05-10T13:14:49.263821088+04:00"
     description: Matic Helm chart for Kubernetes
-    digest: 3a8e66808df810d85f17fec13e68aa18a5ad754e8d69da40cffe1e9daad27dbb
+    digest: cdb3b57e4591ffc7c4b78bd43ff70d5ef6c7d9bffa98e22efa363ada99772fc0
     name: matic
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/matic-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/matic-0.1.0.tgz
     version: 0.1.0
   mattermost:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-04-27T12:26:49.940039166+04:00"
+    created: "2021-05-10T13:14:49.267329858+04:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -377,12 +377,12 @@ entries:
     - team collaboration
     name: mattermost
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mattermost-3.19.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/mattermost-3.19.0.tgz
     version: 3.19.0
   mattermostonsteroids:
   - apiVersion: v1
     appVersion: 5.29.0
-    created: "2021-04-27T12:26:49.943847654+04:00"
+    created: "2021-05-10T13:14:49.270772008+04:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -398,24 +398,24 @@ entries:
     - team collaboration
     name: mattermostonsteroids
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/mattermostonsteroids-3.19.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/mattermostonsteroids-3.19.0.tgz
     version: 3.19.0
   meetings:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.944557971+04:00"
+    created: "2021-05-10T13:14:49.271434648+04:00"
     description: Meetings Helm chart
     digest: 3da60a2e3275226b9f5df16e5d1b34b86ac81c12b8b1ebc81c32aa743e55d478
     icon: https://now.threefold.io/now/assets/static/connect.42db587.cd56aaeb262f9548a2c2518f76e70ca0.png
     name: meetings
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/meetings-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/meetings-0.1.0.tgz
     version: 0.1.0
   minio:
   - apiVersion: v1
     appVersion: master
-    created: "2021-04-27T12:26:49.946639819+04:00"
+    created: "2021-05-10T13:14:49.273373101+04:00"
     description: High Performance, Kubernetes Native Object Storage
     digest: 36009427617b8f52d6c231d9feb26617e87a339b86ac7b36af587b9fd8e35200
     home: https://min.io
@@ -428,7 +428,7 @@ entries:
     sources:
     - https://github.com/minio/minio
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/minio-8.0.10.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/minio-8.0.10.tgz
     version: 8.0.10
   monitoringstack:
   - annotations:
@@ -440,7 +440,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.43.2
-    created: "2021-04-27T12:26:49.973356928+04:00"
+    created: "2021-05-10T13:14:49.299245681+04:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -480,25 +480,25 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/monitoringstack-12.0.5.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/monitoringstack-12.0.5.tgz
     version: 12.0.5
   oauthproxy:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.974026162+04:00"
+    created: "2021-05-10T13:14:49.299928841+04:00"
     description: A Helm chart for Kubernetes oauth proxy server built using https://github.com/threefoldtech/oauth-proxy
     digest: 4a2aba10c302523306289eb0a7fbaa8416eb38ddd81c825d9cfc77b570e98b09
     name: oauthproxy
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/oauthproxy-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/oauthproxy-0.1.0.tgz
     version: 0.1.0
   owncloud:
   - annotations:
       category: Infrastructure
     apiVersion: v2
     appVersion: 10.6.0
-    created: "2021-04-27T12:26:49.98069441+04:00"
+    created: "2021-05-10T13:14:49.307648903+04:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -529,12 +529,12 @@ entries:
     - https://github.com/bitnami/bitnami-docker-owncloud
     - https://owncloud.org/
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/owncloud-10.2.4.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/owncloud-10.2.4.tgz
     version: 10.2.4
   peertube:
   - apiVersion: v2
     appVersion: production-stretch
-    created: "2021-04-27T12:26:49.990822455+04:00"
+    created: "2021-05-10T13:14:49.316890816+04:00"
     dependencies:
     - condition: deps.pg.managed
       name: postgresql
@@ -560,46 +560,46 @@ entries:
     sources:
     - https://github.com/Chocobozzz/PeerTube
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/peertube-0.0.1.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/peertube-0.0.1.tgz
     version: 0.0.1
   presearch:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.991498063+04:00"
+    created: "2021-05-10T13:14:49.31753734+04:00"
     description: Presearch Helm chart for Kubernetes
     digest: 2193c4997c393d4d31ad2b0a85c1087790fdf77679fb864b80672024efb11cf3
     name: presearch
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/presearch-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/presearch-0.1.0.tgz
     version: 0.1.0
   publishingtools:
   - apiVersion: v2
     appVersion: v1.0.0-alpha.18
-    created: "2021-04-27T12:26:49.992205699+04:00"
+    created: "2021-05-10T13:14:49.318274171+04:00"
     description: A Helm chart for Kubernetes to deploy websites and wikis using publishingtools
     digest: 1bc2f782224facd27b6dfdaca2c7c28be5a2114a1e71aa782b44a461832873f6
     name: publishingtools
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/publishingtools-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/publishingtools-0.1.0.tgz
     version: 0.1.0
   taiga:
   - apiVersion: v1
     appVersion: 6.0.6
-    created: "2021-04-27T12:26:49.993085723+04:00"
+    created: "2021-05-10T13:14:49.319171296+04:00"
     description: A Taiga Helm Chart generated for docker-compose from Skippbox Kompose
     digest: 6a22a76cdc7daa6596814eb96348de5c064829b70666e16ff22ff771caef7500
     keywords:
     - taiga
     name: taiga
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/taiga-0.0.1.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/taiga-0.0.1.tgz
     version: 0.0.1
   taiga_old:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-04-27T12:26:49.997694719+04:00"
+    created: "2021-05-10T13:14:49.325380395+04:00"
     dependencies:
     - name: postgresql
       repository: https://charts.bitnami.com/bitnami
@@ -608,28 +608,28 @@ entries:
     digest: 88daa509c0da316a513dae44eaa6db22f02b1a07e7eb4dd8e3a1e6fb946967a0
     name: taiga_old
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/taiga_old-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/taiga_old-0.1.0.tgz
     version: 0.1.0
   tomo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.998301733+04:00"
+    created: "2021-05-10T13:14:49.325995578+04:00"
     description: A Helm chart for Kubernetes
     digest: 025999865d61326fc1c55ab3dee854a08d14fa7ce539b27757a426398885af4b
     name: tomo
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/tomo-0.1.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/tomo-0.1.0.tgz
     version: 0.1.0
   zeroci:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-27T12:26:49.999016065+04:00"
+    created: "2021-05-10T13:14:49.326684022+04:00"
     description: zeroci helm chart
     digest: 24579bb2bc9af7a759f337cd27db66db9d37d9efe2bff8473c636d6838c696f8
     name: zeroci
     type: application
     urls:
-    - https://threefoldtech.github.io/vdc-solutions-charts/zeroci-1.0.0.tgz
+    - https://abdulgig.github.io/vdc-solutions-charts/zeroci-1.0.0.tgz
     version: 1.0.0
-generated: "2021-04-27T12:26:49.843283837+04:00"
+generated: "2021-05-10T13:14:49.184262644+04:00"
